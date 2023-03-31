@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jucaye</title>
+    <link rel="stylesheet" href="css/formulario.css" type="text/css"/>
+    <script lenguaje="JavaScript">
+        function go(){
+            if (document.form.password.value=='1234' && document.form.login.value=='Usuario'){ 
+                    document.form.submit(); 
+                } 
+                else{ 
+                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                } 
+        } 
+    </script>
+</head>
+<body>
+ 
+    <img src="image/titulo_jucaye-removebg-preview.png" alt="">
+        <div class="container">
+        <div class="form-background">
+        <h2>Bienvenido Ingrese Datos</h2>
+        <form name=form action="index2.html">       
+        <input type="text" name="login" placeholder="Usuario">
+        <br>
+        <input type="password" name="password" placeholder="Contraseña">
+        <br><br>
+        <input onclick=go() type=button value=Acceder>
+       </form>
+       </div>
+    </div>
+</body>
+</html>
